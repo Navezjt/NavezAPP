@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index 2 PAGE</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/plyr@3/dist/plyr.css">
+ <!-- Plyr kütüphanesinin temel stil dosyası -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+ <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/plyr@3"></script>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #000;
+            font-family: 'Roboto', sans-serif;
+        }
+
+
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #2c2c2c;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .video-container {
+    width: 95%;
+    overflow: hidden;
+    border: 3px solid #FF7926;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    animation: pulseBorder 3s infinite; /* Pulsating animation */
+}
+
+@keyframes pulseBorder {
+    0% {
+        border-color: #FF7926;
+    }
+    50% {
+        border-color: #0097B2; /* Adjust the color at the midpoint of the animation */
+    }
+    100% {
+        border-color: #FF7926;
+    }
+}
+
+.playlist-container {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+        video {
+            width: 100%;
+            display: block;
+        }
+
+.playlist-links a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    background: #191919; /* Initial color */
+    transition: background 0.3s;
+    overflow: hidden;
+}
+
+.playlist-links a:hover,
+.playlist-links a.active { /* Add active class for the selected state */
+    background: linear-gradient(90deg, #0097B2 0%, #0097B2 25%, #2980b9 100%); /* Blue gradient on hover/selected */
+}
+
+        .channel-image {
+            width: 10%;
+            height: auto;
+            margin-right: 10px;
+            border-radius: 8px;
+        }
+        
+        .playlist-links a.active {
+    background: linear-gradient(90deg, #0097B2 0%, #0097B2 25%, #2980b9 100%);
+    
+}
+
+        
+        
+
+.live-icon img {
+            width: 40px; /* Adjust the width of the image */
+            height: auto; /* Maintain aspect ratio */
+            margin-left: 5px; /* Adjust the distance between the text and the icon */
+            vertical-align: center; /* Align the image vertically with the text */
+           margin-bottom: -6px;
+                   }
+       
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.playlist-links a.flashing {
+    animation: pulse 1s;
+}
+
+
+.text-shadow {
+    text-shadow: 2px 2px 2px #FF7926, -2px -2px 2px #0097B2; /* Adjust values for shadow position and blur */
+}
+
+
+.navigation {
+        background-color: #000; /* Set your desired background color */
+        height: 48px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .navigation ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .navigation li {
+        margin-right: 20px;
+    }
+
+    .navigation a {
+        text-decoration: none;
+        color: #fff; /* Set your desired text color */
+        font-weight: bold;
+        font-size: 16px;
+        transition: color 0.3s;
+    }
+
+    .navigation a:hover {
+        color: #FF7926; /* Set your desired hover color */
+    }
+
+    </style>
+</head>
+<body>
+
+<nav class="navigation">
+        <ul>
+          
+            <!-- Add more menu items as needed -->
+        </ul>
+    </nav>
+
+
+<div class="video-container">
+    <video controls crossorigin autoplay playsinline loop id="video">
+        <source
+                type="application/x-mpegURL"
+                src="https://corsproxy.org/?https://cakal.click/yayinzirve.m3u8">
+    </video>
+</div>
+<div class="playlist-container">
+    <div class="playlist-links">
+        <a href="https://corsproxy.org/?https://cakal.click/yayinzirve.m3u8" class="left-slide"><img src="https://raw.githubusercontent.com/myanony1/myproje/main/web.png" class="channel-image">Lig Sports 1 | Özel<span class="live-icon" style="margin-left: auto;">
+        <img src="https://raw.githubusercontent.com/myanony1/myproje/main/20231221_010256_0000.png" alt="Live Icon">
+    </span></a>
+        
+        <a href="https://corsproxy.org/?https://4.mobileltireguy.com/fatih4/index.m3u8" class="left-slide"><img src="https://raw.githubusercontent.com/myanony1/myproje/main/web.png" class="channel-image">Lig Sports 1 | Düşük Kalite (1)<span class="live-icon" style="margin-left: auto;">
+        <img src="https://raw.githubusercontent.com/myanony1/myproje/main/20231221_010256_0000.png" alt="Live Icon">
+    </span></a>
+        
+        <a href="https://corsproxy.org/?https://16.horizonspinendpain.com/fatih3/index.m3u8" class="left-slide"><img src="https://raw.githubusercontent.com/myanony1/myproje/main/web.png" class="channel-image">Lig Sports 1 | Düşük Kalite (2)<span class="live-icon" style="margin-left: auto;">
+        <img src="https://raw.githubusercontent.com/myanony1/myproje/main/20231221_010256_0000.png" alt="Live Icon">
+    </span></a>
+        
+        <a href="https://corsproxy.org/?https://worker-falling-waterfall-c56d.loyefnbyf.workers.dev/2?.m3u8" class="left-slide"><img src="https://raw.githubusercontent.com/myanony1/myproje/main/web.png" class="channel-image">Lig Sports 1 | A
+        <span class="live-icon" style="margin-left: auto;">
+        <img src="https://raw.githubusercontent.com/myanony1/myproje/main/20231221_010256_0000.png" alt="Live Icon">
+    </span></a>
+        
+        <a href="https://corsproxy.org/?https://worker-falling-waterfall-c56d.loyefnbyf.workers.dev/601?.m3u8"><img src="https://raw.githubusercontent.com/myanony1/myproje/main/web.png" class="channel-image">Lig Sports 1 | B<span class="live-icon" style="margin-left: auto;">
+        <img src="https://raw.githubusercontent.com/myanony1/myproje/main/20231221_010256_0000.png" alt="Live Icon">
+    </span></a>
+        
+        <a href="https://corsproxy.org/?https://volestream-cdn-ooooo.cdnvolestreamcdn.workers.dev/hls/bein-sports-1.m3u8" class="left-slide"><img src="https://raw.githubusercontent.com/myanony1/myproje/main/web.png" class="channel-image">Lig Sports 1 | C<span class="live-icon" style="margin-left: auto;">
+        <img src="https://raw.githubusercontent.com/myanony1/myproje/main/20231221_010256_0000.png" alt="Live Icon">
+    </span></a>
+        
+        <a href="https://corsproxy.org/?https://cakal.click/yayininat.m3u8"><img src="https://raw.githubusercontent.com/myanony1/myproje/main/web.png" class="channel-image">Lig Sports 1 | D<span class="live-icon" style="margin-left: auto;">
+        <img src="https://raw.githubusercontent.com/myanony1/myproje/main/20231221_010256_0000.png" alt="Live Icon">
+    </span></a>
+        
+        <a href="https://corsproxy.org/?https://nove.ca1a71f44456f.shop/p/44VGDaSfBy81mwwvYwBcQ/601/f.beeb38398653d.shop/chunklist_hd.m3u8" class="left-slide"><img src="https://raw.githubusercontent.com/myanony1/myproje/main/web.png" class="channel-image">Lig Sports 1 | E<span class="live-icon" style="margin-left: auto;">
+        <img src="https://raw.githubusercontent.com/myanony1/myproje/main/20231221_010256_0000.png" alt="Live Icon">
+    </span></a>
+        
+        <a href="https://corsproxy.org/?https://cakal.click/yayin1.m3u8"><img src="https://raw.githubusercontent.com/myanony1/myproje/main/web.png" class="channel-image">Lig Sports 1 | F<span class="live-icon" style="margin-left: auto;">
+        <img src="https://raw.githubusercontent.com/myanony1/myproje/main/20231221_010256_0000.png" alt="Live Icon">
+    </span></a>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const video = document.getElementById('video');
+    const playlistLinks = document.querySelectorAll('.playlist-links a');
+
+    playlistLinks.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            // Remove 'active' class from all links
+            playlistLinks.forEach(function(link) {
+                link.classList.remove('active');
+            });
+
+            // Add 'active' class to the clicked link
+            link.classList.add('active');
+
+            const selectedChannel = link.href;
+
+            // Scroll to the top of the document
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+// Flashing effect on the selected link
+link.classList.add('flashing');
+setTimeout(() => {
+    link.classList.remove('flashing');
+}, 1000);
+
+            if (Hls.isSupported()) {
+                const hls = new Hls();
+                hls.loadSource(selectedChannel);
+                hls.attachMedia(video);
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                video.src = selectedChannel;
+            }
+        });
+    });
+
+    // Initialize with the default channel
+    playlistLinks[0].click();
+
+    const defaultOptions = {};
+
+    if (Hls.isSupported()) {
+        const hls = new Hls();
+        hls.loadSource(video.getElementsByTagName('source')[0].src);
+        hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
+            const availableQualities = hls.levels.map((l) => l.height);
+            defaultOptions.quality = {
+                default: availableQualities[0],
+                options: availableQualities,
+            };
+            const player = new Plyr(video, defaultOptions);
+        });
+    } else {
+        const player = new Plyr(video, defaultOptions);
+    }
+});
+</script>
+
+</body>
+</html>
